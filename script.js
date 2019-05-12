@@ -253,5 +253,5 @@ function frameLooper() {
 	}
 	
 	document.getElementById("time").innerHTML = Math.floor(audio.currentTime / 60) + ":" + (Math.floor(audio.currentTime % 60) < 10 ? "0" : "") + Math.floor(audio.currentTime % 60);
-	// window.requestAnimationFrame(frameLooper);
+	window.requestAnimationFrame(frameLooper);
 }
